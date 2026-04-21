@@ -44,10 +44,6 @@ def is_within_time_window(start,end):
     end_time = now.replace(hour=int(eh), minute=int(em), second=0, microsecond=0)
     
     within =  start_time <= now <= end_time
-    if within:
-       print("within time window")
-    else:
-       print("not within time window")
     return within
 
 def run_swift_caller(filename):
